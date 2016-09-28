@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = "demo.lombok.NonNullDemo"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile("org.projectlombok:lombok:1.16.10")
+	compile group: 'org.spockframework', name: 'spock-core', version: '1.0-groovy-2.4'
+}
